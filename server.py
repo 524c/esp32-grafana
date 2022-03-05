@@ -72,7 +72,7 @@ async def create_item(sensor: Sensor) -> str:
         Point("metric")
         .tag("sensor", data["name"])
         .field("sensor1", data["sensor1"])
-        .field("sensor1", data["sensor2"])
+        .field("sensor2", data["sensor2"])
         .field("time_precision", "ms")
     )
     influx.write(p)
