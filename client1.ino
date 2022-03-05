@@ -36,7 +36,7 @@ void postDataToServer() {
     //
     doc["name"] = "esp32";
     doc["sensor1"] = 1; // coletar valor do sensor 1
-	doc["sensor2"] = 2; // coletar valor do sensor 2
+    doc["sensor2"] = 2; // coletar valor do sensor 2
    
     String requestBody;
     serializeJson(doc, requestBody);
