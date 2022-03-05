@@ -43,8 +43,8 @@ class SensorData(object):
 
 class Sensor(BaseModel):
     name: str
-    value: float
-    value2: Optional[float] = None
+    sensor1: float
+    sensor2: Optional[float] = None
     description: Optional[str] = None
 
 
