@@ -9,6 +9,8 @@ from fastapi import FastAPI
 from typing import Optional
 from pydantic import BaseModel
 import uvicorn
+from influxdb_client import InfluxDBClient, Point
+from influxdb_client.client.write_api import SYNCHRONOUS
 
 
 class Sensor(BaseModel):
