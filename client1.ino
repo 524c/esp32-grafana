@@ -28,7 +28,7 @@ void postDataToServer() {
      
     HTTPClient http;   
      
-    http.begin("https://httpbin.org/anything");  
+    http.begin("http://causaefeito.rlrobotics.com:8000/api/v1/sensor");  
     http.addHeader("Content-Type", "application/json");         
 
     StaticJsonDocument<200> doc;
