@@ -54,7 +54,7 @@ app = FastAPI()
 INFLUXDB_BUCKET = "causa_efeito"
 INFLUXDB_ORG = "causa_efeito"
 
-influx = SensorData(bucket=INFLUXDB_BUCKET, org=INFLUXDB_ORG)
+influx = SensorData(bucket=INFLUXDB_BUCKET, org=INFLUXDB_ORG, token="causa_efeito")
 
 
 @app.get("/")
